@@ -10,4 +10,6 @@ MongoDB Setup in Local in Windows
 
 I first pre-processed the data:
 1. saved into csv format
-2. Experience column, I deleted the 'years' so the column can be integer instead of string
+2. Experience column, I deleted the 'years' so the column can be decimal_128 instead of string
+
+Then Data was inported then into mongodb collections
