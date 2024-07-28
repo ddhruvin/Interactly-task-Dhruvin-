@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indirectly.video</title>
+</head>
+<body>
+    <h4> Internship Task &lt;Dhruvin&gt;</h4>
+    <h1><b><i>Resume Shortlister</b></i></h1>
+    <form method="POST" action="/generate">
+        <label for="prompt">Enter your prompt:</label>
+        <textarea id="prompt" name="prompt" required></textarea>
+        <button type="submit">Generate Response</button>
+    </form>
+    {% if prompt %}
+        <h2>Prompt: {{ prompt }}</h2>
+        <h3>Top Profiles:</h3>
+        {% for profile in top_profiles %}
+            <div>
+                <h4>{{ profile.Name }}</h4>
+                <p>Contact: {{ profile['Contact Details'] }}</p>
+                <p>Location: {{ profile.Location }}</p>
+                <p>Job Skills: {{ profile['Job Skills'] }}</p>
+                <p>Experience: {{ profile.Experience }} years</p>
+                <p>Projects: {{ profile.Projects }}</p>
+                <p>Comments: {{ profile.Comments }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
