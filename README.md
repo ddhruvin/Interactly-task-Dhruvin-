@@ -13,3 +13,7 @@ I first pre-processed the data:
 2. Experience column, I deleted the 'years' so the column can be decimal_128 instead of string
 
 Then Data was inported then into mongodb collections
+
+pip install Flask pymongo spacy
+
+
