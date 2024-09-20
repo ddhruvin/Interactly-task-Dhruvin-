@@ -1,4 +1,4 @@
-# Interactly-task-Dhruvin
+# Interactly-task-Dhruvin 
 MongoDB Setup in Local in Windows
 1. Install MongoDB Server, Shell and Compass
 2. extract shell file into program files-mongodb
